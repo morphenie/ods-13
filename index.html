@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desenvolvimento Sustentável</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background: url(agua4.jpg) no-repeat center/cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .p1 {
+      font-size: 5rem;
+      color: cornflowerblue;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background-color: #ffffff;
+    }
+
+    nav a {
+      background-color: #2E8B57;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 0px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #add8e6;
+      transform: scale(1.05);
+    }
+
+    .texto {
+      text-align: justify;
+      padding: 20px 30px;
+      font-size: 1rem;
+      text-indent: 2em;
+    }
+
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .box {
+      width: 45%;
+      background-color: white;
+      margin: 10px;
+      padding: 20px;
+      border-left: 5px solid SkyBlue;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .destaque-site {
+      background-color: #e0f7fa;
+      padding: 20px;
+      margin: 30px;
+      border-left: 6px solid teal;
+    }
+
+    .destaque-site a {
+      color: darkblue;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .topicos {
+      margin: 40px 30px;
+    }
+
+    .topicos h2 {
+      color: darkgreen;
+      margin-bottom: 10px;
+    }
+
+    /* cards */
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 40px 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 300px;
+      margin: 15px;
+      padding: 20px;
+      border-left: 5px solid #2E8B57;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      color: #2e8b57;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      margin-right: 8px;
+    }
+
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .p1 {
+        font-size: 2.5rem;
+        padding: 0 10px;
+      }
+
+      .section-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        width: 90%;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+    .content-section {
+      display: none;
+    }
+
+    .content-section:target {
+      display: block;
+    }
+
+
+    body:not(:has(:target)) #ods13 {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="p1">
+      Precisamos <span style="color:darkcyan">urgentemente</span> proteger o planeta  
+      para as gerações atuais e também as<span style="color:lightcyan"><b> futuras</b></span>
+    </p>
+  </header>
+
+  <nav>
+  <a href="#ods13">ODS 13</a>
+  <a href="#site">Importante</a>
+  <a href="#reflexoes">Reflexões</a>
+  <a href="#video">Vídeo</a>
+</nav>
+
+ <main>
+  <section id="ods13" class="content-section">
+    <div class="section-container">
+      <div class="box">
+        <p class="texto"><strong>Objetivos de Desenvolvimento Sustentável da ONU:</strong> É um plano de ação global da Organização das Nações Unidas, que reúne 17 ODS com foco na promoção de uma vida digna a todos.</p>
+      </div>
+      <div class="box">
+        <p class="texto"><strong>ODS 13 – Ação contra a mudança global do clima:</strong> Adotar medidas urgentes para combater as alterações climáticas e seus impactos. Cada um de nós pode contribuir.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="site" class="content-section">
+    <div class="destaque-site">
+      <p>Veja também essa matéria relevante da Fiocruz que relaciona os gastos militares com o impacto no desenvolvimento sustentável:</p>
+      <a href="https://cee.fiocruz.br/?q=Um-mundo-que-prioriza-os-gastos-militares-em-detrimento-do-desenvolvimento-sustentavel" target="_blank">
+        🌐 Um mundo que prioriza os gastos militares em detrimento do desenvolvimento sustentável
+      </a>
+    </div>
+  </section>
+
+  <section id="reflexoes" class="content-section">
+    <div class="topicos">
+      <h2>Reflexões importantes:</h2>
+      <div class="cards-container">
+        <div class="card">
+          <h3><span class="icon">⚠️</span>Prevenção deixou de ser prioridade</h3>
+          <p>Enquanto eventos climáticos extremos aumentam, o Brasil reduz investimentos em prevenção. <strong>Ignorar o clima custa mais caro.</strong></p>
+        </div>
+        <div class="card">
+          <h3><span class="icon">💣</span>Armamentos ou sustentabilidade?</h3>
+          <p>Bilhões são destinados a armas, enquanto comunidades sofrem com seca e enchentes. <strong>Qual futuro estamos financiando?</strong></p>
+        </div>
+        <div class="card">
+          <h3><span class="icon">❓</span>O que realmente é prioridade?</h3>
+          <p>Escolher onde investir é escolher o que preservar. <br><strong>Segurança ambiental também salva vidas.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="video" class="content-section">
+    <div style="padding: 30px; text-align: center;">
+      <h2 style="color: darkslategray; margin-bottom: 20px;">Vídeo recomendado</h2>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 700px; margin: 0 auto;">
+        <iframe 
+          src="https://www.youtube.com/embed/ruOzd5Mthnc" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
